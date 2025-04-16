@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="phonebook.tests.LoginTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-04-14T18:38:40.512Z" hostname="DESKTOP-MOUANAN" time="21.881">
+  <properties/>
+  <testcase name="loginExistedUserObject1PositiveTest" classname="phonebook.tests.LoginTests" time="2.112"/>
+  <testcase name="loginExistedUserObject2PositiveTest" classname="phonebook.tests.LoginTests" time="1.919"/>
+  <testcase name="loginExistedUserPositiveTest" classname="phonebook.tests.LoginTests" time="2.01"/>
+  <system-out><![CDATA[20:38:34.490 [Test worker] INFO  phonebook.core.TestBase -- logger info: loginExistedUserObject1PositiveTest
+20:38:34.497 [Test worker] WARN  phonebook.core.TestBase -- logger warn
+20:38:34.498 [Test worker] ERROR phonebook.core.TestBase -- logger error
+20:38:42.630 [Test worker] INFO  phonebook.core.TestBase -- PASSEDloginExistedUserObject1PositiveTest
+20:38:42.632 [Test worker] INFO  phonebook.core.TestBase -- ===========================================================================
+20:38:44.871 [Test worker] INFO  phonebook.core.TestBase -- logger info: loginExistedUserObject2PositiveTest
+20:38:44.871 [Test worker] WARN  phonebook.core.TestBase -- logger warn
+20:38:44.871 [Test worker] ERROR phonebook.core.TestBase -- logger error
+20:38:52.576 [Test worker] INFO  phonebook.core.TestBase -- PASSEDloginExistedUserObject2PositiveTest
+20:38:52.577 [Test worker] INFO  phonebook.core.TestBase -- ===========================================================================
+20:38:54.704 [Test worker] INFO  phonebook.core.TestBase -- logger info: loginExistedUserPositiveTest
+20:38:54.704 [Test worker] WARN  phonebook.core.TestBase -- logger warn
+20:38:54.705 [Test worker] ERROR phonebook.core.TestBase -- logger error
+20:39:02.397 [Test worker] INFO  phonebook.core.TestBase -- PASSEDloginExistedUserPositiveTest
+20:39:02.398 [Test worker] INFO  phonebook.core.TestBase -- ===========================================================================
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

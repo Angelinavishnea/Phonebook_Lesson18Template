@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="phonebook.tests.DeleteContactTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-04-14T18:39:25.135Z" hostname="DESKTOP-MOUANAN" time="1.402">
+  <properties/>
+  <testcase name="creatOneAndDeleteOnePositiveTest" classname="phonebook.tests.DeleteContactTests" time="1.402"/>
+  <system-out><![CDATA[20:39:17.555 [Test worker] INFO  phonebook.core.TestBase -- logger info: creatOneAndDeleteOnePositiveTest
+20:39:17.555 [Test worker] WARN  phonebook.core.TestBase -- logger warn
+20:39:17.555 [Test worker] ERROR phonebook.core.TestBase -- logger error
+20:39:25.457 [Test worker] INFO  phonebook.tests.DeleteContactTests -- ÐšÐ¾Ð»-Ð²Ð¾ ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ð¾Ð² Ð”Ðž ÑƒÐ´Ð°Ð»ÐµÐ½Ð¸Ñ?: 9
+ÐšÐ¾Ð»-Ð²Ð¾ ÐºÐ¾Ð½Ñ‚Ð°ÐºÑ‚Ð¾Ð² ÐŸÐžÐ¡Ð›Ð• ÑƒÐ´Ð°Ð»ÐµÐ½Ð¸Ñ?: 8
+20:39:26.541 [Test worker] INFO  phonebook.core.TestBase -- PASSEDcreatOneAndDeleteOnePositiveTest
+20:39:26.543 [Test worker] INFO  phonebook.core.TestBase -- ===========================================================================
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

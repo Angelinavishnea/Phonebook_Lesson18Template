@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Quick" verbose="1">
+<!--    verbose = log level  -->
+    <test name="Navigate">
+        <classes>
+            <class name="phonebook.tests.HomePageTests"/>
+        </classes>
+    </test>
+</suite>
