@@ -1,19 +1,27 @@
 package phonebook.tests;
 
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import phonebook.core.TestBase;
 import phonebook.model.User;
 
 public class LoginTests extends TestBase {
+    @BeforeMethod
+    public void precondition() {
+        if (!app.getUserHelper().isLoginLinkPresent()) {
+            app.getUserHelper().clickOnSignOutButton();
+        }
+    }
+
     @Test
-    public void loginExistedUserPositiveTest(){
+    public void loginExistedUserPositiveTest() {
         app.getUserHelper().login("portishead@gmail.com", "Password@1");
         app.getUserHelper().checkSuccessLogin();
     }
 
     @Test
-    public void loginExistedUserObject1PositiveTest(){
+    public void loginExistedUserObject1PositiveTest() {
         app.getUserHelper().login(new User()
                 .setEmail("portishead@gmail.com")
                 .setPassword("Password@1")
@@ -32,7 +40,7 @@ public class LoginTests extends TestBase {
     }
 
     @Test
-    public void loginWOEmail1NegativeTest(){
+    public void loginWOEmail1NegativeTest() {
         User user = new User();
         user.setPassword("Password@1");
         app.getUserHelper().login(user);
@@ -40,7 +48,7 @@ public class LoginTests extends TestBase {
     }
 
     @Test
-    public void loginWOEmail2NegativeTest(){
+    public void loginWOEmail2NegativeTest() {
         app.getUserHelper().login(new User()
                 .setPassword("Password@1")
         );
@@ -48,7 +56,7 @@ public class LoginTests extends TestBase {
     }
 
     @Test
-    public void loginWOPasswordNegativeTest(){
+    public void loginWOPasswordNegativeTest() {
         app.getUserHelper().login(new User()
                 .setEmail("portishead@gmail.com")
         );
