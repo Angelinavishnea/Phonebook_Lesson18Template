@@ -20,3 +20,19 @@ test {
     useTestNG()
 }
 
+def registerTask(String taskName, String suitePath) {
+    tasks.register(taskName, Test){
+        useTestNG(){
+            suites suitePath
+        }
+        if(project.hasProperty("browser")) {
+            systemProperty 'browser', "${browser}"
+        }
+    }
+}
+
+registerTask('home', 'src/test/resources/testNG.xml')
+// (task Name, что включается)
+//gradle clean home
+registerTask('smoky', 'src/test/resources/smoky.xml')
+
